@@ -1,0 +1,127 @@
+@mixin fontFace($family,$src,$style: normal,$weight: normal) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$src}.eot'); 
+		src: url('#{$src}.woff2') format('woff2'),
+			url('#{$src}.woff') format('woff'), 
+			url('#{$src}.ttf') format('truetype');
+
+		font-style: $style;
+		font-weight: $weight;
+	}
+}
+
+
+// @include boxShadowMixin(
+// 	$offX: map-get($main_shadow, 'offX'),
+// 	$offY: map-get($main_shadow, 'offY'),
+// 	$blur: map-get($main_shadow, 'blur'),
+// 	$spread: map-get($main_shadow, 'spread'),
+// 	$color: map-get($main_shadow, 'color'),
+// 	$alpha: map-get($main_shadow, 'alpha')
+// );
+@mixin boxShadowMixin(
+	$offX: 0rem, 
+	$offY: 0.625rem, 
+	$blur: 1.25rem, 
+	$spread: -1rem, 
+	$color: $terciary, 
+	$alpha: 0.35
+	) {
+	-webkit-box-shadow: $offX $offY $blur $spread rgba($color, $alpha);
+	-moz-box-shadow: $offX $offY $blur $spread rgba($color, $alpha);
+	box-shadow: $offX $offY $blur $spread rgba($color, $alpha);
+}
+
+// Call it with no parameters, to handle animations between no shadow and active shadows
+@mixin noBoxShadow() {
+	-webkit-box-shadow: 0 0 0 0 rgba(transparent, 0);
+	-moz-box-shadow: 0 0 0 0 rgba(transparent, 0);
+	box-shadow: 0 0 0 0 rgba(transparent, 0);
+}
+
+
+// @include buttonMixin(
+// 	$width: auto, 
+// 	$height: $button_big, 
+// 	$backColor: $white, 
+// 	$borderColor: transparent, 
+// 	$borderWidth: 0px,
+// 	$textColor: $full_black, 
+// 	$borderRadius: 0,
+// 	$activeBackColor: $primary,
+// 	$activeTextColor: $white
+// 	);
+// min-height: unset;
+@mixin buttonMixin(
+	$width: auto, 
+	$height: $button_big, 
+	$backColor: $white, 
+	$backOpacity: 0.502,
+	$borderColor: $white, 
+	$borderWidth: 1.5px,
+	$textColor: $white, 
+	$borderRadius: $button_big,
+	$activeBackColor: $secondary,
+	$activeTextColor: $white,
+	$lineHeight: 1.5,
+	) {
+	width: $width;
+	height: $height;
+	border-radius: $borderRadius;
+	background-color: rgba($backColor, $backOpacity);
+	color: $textColor;
+	border: $borderWidth solid $borderColor;
+	transition: all 0.2s ease-in-out;
+	line-height: $lineHeight;
+	&:hover,
+	&:active {
+		background-color: rgba($activeBackColor, $backOpacity) !important;
+		color: $activeTextColor !important;
+		border-color: $activeBackColor;
+	}
+}
+
+
+
+@mixin flexElementBase($direction: row, $justify: center, $align: center, $wrap: wrap) {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: $direction;
+	-moz-flex-direction: $direction;
+	-ms-flex-direction: $direction;
+	-o-flex-direction: $direction;
+	flex-direction: $direction;
+	justify-content: $justify;
+	-ms-align-items: $align;
+	align-items: $align;
+	-webkit-flex-wrap: $wrap;
+	-moz-flex-wrap: $wrap;
+	-ms-flex-wrap: $wrap;
+	-o-flex-wrap: $wrap;
+	flex-wrap: $wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
