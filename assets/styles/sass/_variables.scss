@@ -1,9 +1,9 @@
 // Colors
-$primary: #ffce00;
-$text_color: #1c1507;
-$link_color: #4D4D4D;
-$shadow: #f0b800;
-$full_black: #000000;
+$primary: #227a21;
+$secondary: #294b9d;
+$terciary: #2e5ba2;
+$gray: #c0c0c0;
+$black: #000000;
 $white: #FFFFFF;
 
 // SIZES
@@ -27,7 +27,7 @@ $main_shadow: (
 	'offY': 0.3125rem, 
 	'blur': 2.35rem, 
 	'spread': 0.15rem, 
-	'color': $shadow, 
+	'color': $black, 
 	'alpha': 1
 );
 

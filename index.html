@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Erikvon S.A. de C.V.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
+
 <body>
-    
+    <div class="container-fluid p-0">
+        <div id="top" class="header_separator"></div>
+        <nav id="navbar-principal" class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#Top">
+                <img src="./assets/images/logo.png" alt="Erikvon" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Home">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">Nosotros <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Services">Servicios <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="mx-0">
+            <div class="" id="Home">
+                <p class="slideText">Reciclar es nuestra <br><span>responsabilidad</span></p>
+                <div class="mainSlider">
+                    <div class="item slide1"></div>
+                    <div class="item slide2"></div>
+                    <div class="item slide3"></div>
+                    <div class="item slide4"></div>
+                </div>
+                <button type="button" class="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                <button type="button" class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                <div class="contactBanner">
+                    <p>Compra y Venta de Desperdicios Industriales</p>
+                    <a href="#Contact" class="btn btn-green">Contáctanos</a>
+                    <a href="#" class="scroller"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div id="HomeGrid" class="grid-container w-100">
+                <a class="grid-item logo" href="#">
+                    <div class="inner-grid d-flex justify-content-center align-items-center">
+                        <img src="./assets/images/mosiaco-logo.gif" alt="Erikvon" class="img-fluid">
+                    </div>
+                </a>
+                <a class="grid-item servicios" href="#">
+                    <div class="inner-grid d-flex flex-column justify-content-start align-items-start">
+                        <p class="header">Servicios</p>
+                        <p class="subheader">Compra y Venta</p>
+                    </div>
+                </a>
+                <a class="grid-item materiales" href="#">
+                    <div class="inner-grid d-flex flex-column justify-content-start align-items-start">
+                        <p class="header">Materiales</p>
+                        <p class="subheader">Pet, Papel, Cartón y Archivo Muerto</p>
+                    </div>
+                </a>
+                <a class="grid-item personal" href="#">
+                    <div class="inner-grid d-flex flex-column justify-content-start align-items-start">
+                        <p class="header">Personal</p>
+                        <p class="subheader">Responsable y Profesrional</p>
+                    </div>
+                </a>
+                <a class="grid-item instalaciones" href="#">
+                    <div class="inner-grid d-flex flex-column justify-content-start align-items-start">
+                        <p class="header">Instalaciones</p>
+                        <p class="subheader">Equipo y Transporte</p>
+                    </div>
+                </a>
+                <a class="grid-item proceso" href="#">
+                    <div class="inner-grid d-flex flex-column justify-content-start align-items-start">
+                        <p class="header">Proceso</p>
+                        <p class="subheader">Recolección, Separaciçon y Reciclado</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="header_separator"></div>
+            <nav id="navbar-main" class="navbar navbar-expand-lg sticky-top">
+                <a class="navbar-brand" href="#Top">
+                    <img src="./assets/images/logo.png" alt="Erikvon" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#Home">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">Nosotros <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Services">Servicios <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="About" style="min-height: 200vh;"></div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+    <script src="./assets/scripts/main.js"></script>
 </body>
+
 </html>
