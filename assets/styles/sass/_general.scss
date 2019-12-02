@@ -529,6 +529,28 @@ a:active {
             border-radius: 10px;
             padding: 1rem;
 
+            #svgbg {
+                position: absolute;
+                bottom: -18px;
+                left: 50%;
+                transform: translateX(-50%) rotate(-180deg);
+                z-index: 0;
+                width: 100px;
+                height: 18px;
+                fill: #ffffff;
+                opacity: 1;
+                fill: rgba($primary, 0.8);
+                fill-opacity: 1;
+                fill-rule: evenodd;
+                stroke: none;
+                stroke-width: 1;
+                stroke-linecap: round;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 4;
+                stroke-dasharray: none;
+                stroke-opacity: 1
+            }
+
             .scroller {
                 width: 120px;
                 height: 30px;
@@ -536,7 +558,8 @@ a:active {
                 bottom: -30px;
                 left: 50%;
                 transform: translateX(-50%);
-                background-color: rgba($primary, 0.8);
+                background-color: transparent;
+                // background-color: rgba($primary, 0.8);
                 border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
                 // border-radius: 50% 50% 50% 50% / 50% 50% 30% 30%;
                 display: flex;
@@ -548,7 +571,7 @@ a:active {
                     color: $white;
                     z-index: 10;
                     position: relative;
-                    bottom: 5px;
+                    bottom: 15px;
                 }
             }
 
@@ -756,24 +779,46 @@ a:active {
         background-color: $primary;
         position: relative;
 
+        #svgbg {
+            position: absolute;
+            top: 140px;
+            right: -108px;
+            transform: translateX(-50%) rotate(90deg);
+            z-index: 1;
+            width: 100px;
+            height: 18px;
+            fill: #ffffff;
+            opacity: 1;
+            fill: $primary;
+            fill-opacity: 1;
+            fill-rule: evenodd;
+            stroke: none;
+            stroke-width: 1;
+            stroke-linecap: round;
+            stroke-linejoin: miter;
+            stroke-miterlimit: 4;
+            stroke-dasharray: none;
+            stroke-opacity: 1
+        }
+
         .scroller {
             width: 100px;
             height: 100px;
             position: absolute;
             top: 100px;
             right: -35px;
-            background-color: $primary;
+            background-color: transparent;
             border-radius: 50% 50% 50% 50% / 40% 60% 60% 40%;
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            z-index: 1;
+            z-index: 2;
 
             i {
                 color: $white;
                 z-index: 10;
                 position: relative;
-                right: 15px;
+                right: 25px;
             }
         }
 
