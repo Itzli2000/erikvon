@@ -775,6 +775,21 @@ a:active {
 }
 
 #Installations {
+    .slick-slider {
+        height: 100%;
+
+        .slick-list {
+            height: 100%;
+
+            .slick-track {
+                height: 100%;
+                .slick-slide div:first-child {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
     .colored {
         background-color: $primary;
         position: relative;
@@ -833,6 +848,7 @@ a:active {
                 margin-bottom: 3px;
                 font-weight: bold;
                 line-height: 1.7rem;
+                font-size: 1rem;
 
                 &:before {
                     content: '';
@@ -849,14 +865,16 @@ a:active {
                 margin-left: 1rem;
                 margin-bottom: 2rem;
                 color: $white;
-                font-size: 0.7rem;
+                font-size: 0.65rem;
             }
 
             .customCard {
                 position: relative;
                 border: 2px solid $accent;
                 border-radius: 10px;
-                padding: 1rem 2rem;
+                padding: 0.3rem 1.5rem;
+                padding-top: 1.3rem;
+                margin-bottom: 2rem;
 
                 .customCard-header {
                     position: absolute;
@@ -875,16 +893,21 @@ a:active {
                 .customCard-body {
                     color: $white;
                     font-weight: normal;
-                    font-size: 0.9rem;
+                    font-size: 0.65rem;
                     list-style: none;
                     padding: 0;
+                    margin-bottom: 0.5rem;
 
                     li {
-                        text-indent: 5px;
+                        text-indent: 0;
+                        position: relative;
 
                         &:before {
                             content: '-';
-                            text-indent: -5px;
+                            text-indent: -10px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
                         }
                     }
                 }
