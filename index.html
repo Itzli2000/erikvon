@@ -17,6 +17,13 @@
 </head>
 
 <body>
+    <svg xmlns='http://www.w3.org/2000/svg' width='100' height='18' id="layer1" style="display:none;">
+        <symbol id="spline">
+            <path id="rect815"
+                d="M 0,18 H 100 V 17 H 99.98991 C 79.35169,17 70.004651,0 50.549894,0 31.095137,0 18.262537,17 0.100898,17 H 0 Z" />
+        </symbol>
+
+    </svg>
     <div class="container-fluid p-0">
         <div id="top" class="header_separator"></div>
         <nav id="navbar-principal" class="navbar navbar-expand-lg">
@@ -70,10 +77,11 @@
                 <div class="contactBanner">
                     <p>Compra y Venta de Desperdicios Industriales</p>
                     <a href="#Contact" class="btn btn-green">Contáctanos</a>
-                    <a href="#" class="scroller"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                    <svg height="80" width="150">
-                        <ellipse cx="70" cy="30" rx="65" ry="20" style="fill:#294b9d;" />
+                    <svg id="svgbg" viewBox="0 0 100 18">
+                        <use xlink:href="#spline"></use>
+
                     </svg>
+                    <a href="#" class="scroller"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div id="HomeGrid" class="grid-container w-100">
@@ -114,7 +122,7 @@
                 </a>
             </div>
 
-            <div class="header_separator"></div>
+            <div class="header_separator sticky-top"></div>
             <nav id="navbar-main" class="navbar navbar-expand-lg sticky-top">
                 <a class="navbar-brand" href="#Top">
                     <img src="./assets/images/logo.png" alt="Erikvon" class="img-fluid">
@@ -177,17 +185,26 @@
                                 desarrollar dicha empresa para así proporcionar un servicio de calidad cubriendo las
                                 necesidades del cliente.
                             </p>
+                            <svg id="svgbg" viewBox="0 0 100 18">
+                                <use xlink:href="#spline"></use>
+
+                            </svg>
                             <div class="scroller"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                    <img src="./assets/images/mosiaco-logo.gif" alt="Erikvon" class="img-fluid">
+                    <img style="max-width: 300px;" src="./assets/images/mosiaco-logo.gif" alt="Erikvon"
+                        class="img-fluid">
                 </div>
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
                     <p class="slideText">Reciclar es nuestra <br><span>responsabilidad</span></p>
                 </div>
                 <div class="col-12 col-md-6 colored misionContainer">
+                    <svg id="svgbg" viewBox="0 0 100 18">
+                        <use xlink:href="#spline"></use>
+
+                    </svg>
                     <div class="scroller"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
                     <p class="mision text-justify">
                         <span>MISIÓN:</span>
@@ -222,43 +239,84 @@
                     </div>
                 </div>
             </div>
-            <div id="ServicesGrid" class="grid-container w-100">
-                    <a class="grid-item logo" href="#">
-                        <div class="inner-grid d-flex justify-content-center align-items-center">
-                            <img src="./assets/images/mosiaco-logo.gif" alt="Erikvon" class="img-fluid">
-                        </div>
-                    </a>
-                    <a class="grid-item servicios" href="#">
-                        <div class="inner-grid d-flex flex-column justify-content-start align-items-start">
-                            <p class="header">Servicios</p>
-                            <p class="subheader">Compra y Venta</p>
-                        </div>
-                    </a>
-                    <a class="grid-item materiales" href="#">
-                        <div class="inner-grid d-flex flex-column justify-content-start align-items-start">
-                            <p class="header">Materiales</p>
-                            <p class="subheader">Pet, Papel, Cartón y Archivo Muerto</p>
-                        </div>
-                    </a>
-                    <a class="grid-item personal" href="#">
-                        <div class="inner-grid d-flex flex-column justify-content-start align-items-start">
-                            <p class="header">Personal</p>
-                            <p class="subheader">Responsable y Profesrional</p>
-                        </div>
-                    </a>
-                    <a class="grid-item instalaciones" href="#">
-                        <div class="inner-grid d-flex flex-column justify-content-start align-items-start">
-                            <p class="header">Instalaciones</p>
-                            <p class="subheader">Equipo y Transporte</p>
-                        </div>
-                    </a>
-                    <a class="grid-item proceso" href="#">
-                        <div class="inner-grid d-flex flex-column justify-content-start align-items-start">
-                            <p class="header">Proceso</p>
-                            <p class="subheader">Recolección, Separaciçon y Reciclado</p>
-                        </div>
-                    </a>
+            <div id="Materials" class="grid-container w-100">
+                <div class="grid-item logo">
+                    <div class="inner-grid d-flex flex-column justify-content-center align-items-center">
+                        <p class="header">Servicios</p>
+                        <p class="subheader">Elaboramos las pacas de alta densidad de la mejor calidad en la CDMX,
+                            nuestro producto se encuentra clasificado, sin contaminantes ni humedad.</p>
+                    </div>
                 </div>
+                <div class="grid-item servicios">
+                    <!-- <div class="inner-grid d-flex flex-column justify-content-center align-items-center">
+                        <p class="header">Servicios</p>
+                        <p class="subheader">Compra y Venta</p>
+                    </div> -->
+                </div>
+                <div class="grid-item materiales">
+                    <!-- <div class="inner-grid d-flex flex-column justify-content-center align-items-center">
+                        <p class="header">Materiales</p>
+                        <p class="subheader">Pet, Papel, Cartón y Archivo Muerto</p>
+                    </div> -->
+                </div>
+                <div class="grid-item personal">
+                    <!-- <div class="inner-grid d-flex flex-column justify-content-center align-items-center">
+                        <p class="header">Personal</p>
+                        <p class="subheader">Responsable y Profesrional</p>
+                    </div> -->
+                </div>
+                <div class="grid-item instalaciones">
+                    <!-- <div class="inner-grid d-flex flex-column justify-content-center align-items-center">
+                        <p class="header">Instalaciones</p>
+                        <p class="subheader">Equipo y Transporte</p>
+                    </div> -->
+                </div>
+                <div class="grid-item proceso">
+                    <!-- <div class="inner-grid d-flex flex-column justify-content-center align-items-center">
+                        <p class="header">Proceso</p>
+                        <p class="subheader">Recolección, Separaciçon y Reciclado</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="d-flex flex-row flex-wrap" id="Installations">
+                <div
+                    class="col-12 col-md-4 col-lg-3 colored d-flex flex-column justify-content-center align-items-center p-3">
+                    <div class="scroller"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                    <div class="description">
+                        <p class="header">Instalaciones</p>
+                        <p class="subheader">Actualmente "ERIKVON, S.A. DE C.V.", cuenta con dos bodegas ampliamente
+                            equipadas para el almacenamiento y manejo de los productos para empaque.</p>
+                        <div class="customCard">
+                            <p class="customCard-header">equipo:</p>
+                            <ul class="customCard-body">
+                                <li>Báscula Digital para capacidad de 70 ton.</li>
+                                <li>Cizalla hidráulica para corte de 80 cm. con motorde 15 HP</li>
+                                <li>Máquinas trituradoras con martillos de golpecon motor de 30 HP., 25HP. y 7.5 HP</li>
+                                <li>Prensa Empacadora de papel de 20 Ton. por hora</li>
+                                <li>Montacargas.</li>
+                                <li>Mini cargador (Bobcat).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-9 p-0">
+                    <div class="InstallationsSlider">
+                        <div class="item slide1"></div>
+                        <div class="item slide2"></div>
+                        <div class="item slide3"></div>
+                        <div class="item slide4"></div>
+                        <div class="item slide5"></div>
+                        <div class="item slide6"></div>
+                        <div class="item slide7"></div>
+                        <div class="item slide8"></div>
+                        <div class="item slide9"></div>
+                    </div>
+                    <button type="button" class="prevInstallations"><i class="fa fa-chevron-left"
+                            aria-hidden="true"></i></button>
+                    <button type="button" class="nextInstallations"><i class="fa fa-chevron-right"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Scripts -->
