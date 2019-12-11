@@ -5,12 +5,12 @@ $(document).ready(function () {
         prevArrow: $('.prev'),
         nextArrow: $('.next'),
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
     });
     $('.InstallationsSlider').slick({
         prevArrow: $('.prevInstallations'),
         nextArrow: $('.nextInstallations'),
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
     });
 });

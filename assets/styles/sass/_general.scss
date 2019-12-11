@@ -1321,4 +1321,28 @@ footer {
         stroke-dasharray: none;
         stroke-opacity: 1
     }
+
+    p, a {
+        color: $white;
+        font-size: 0.7rem;
+        transition: all 0.25s ease-in-out;
+    }
+
+    p {
+        position: relative;
+        margin-bottom: 0;
+        i {
+            position: absolute;
+            left: -1.5rem;
+            font-size: 1rem !important;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    a {
+        &:hover {
+            color: rgba($white, 0.5);
+        }
+    }
 }
