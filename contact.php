@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_POST['submit'])) {
     $encoding = "utf-8";
     // Preferences for Subject field
@@ -10,14 +11,14 @@ if (isset($_POST['submit'])) {
     );
 
     // Multiple recipients
-    $to = 'itzli2000@msn.com';
-    $from_name = $_POST['Name'];
-    $from_phone = $_POST['Phone'];
-    $from_mail = $_POST['Email'];
-    $from_message = $_POST['Message'];
+    $to = 'informes@tons-ke.com';
+    $from_name = $_POST['name'];
+    $from_phone = $_POST['phone'];
+    $from_mail = $_POST['email'];
+    $from_message = $_POST['message'];
 
     // Subject
-    $subject = 'Contacto desde Erikvon';
+    $subject = 'Contacto desde Tons-ke';
 
     // Message
     $message = '
@@ -26,7 +27,7 @@ if (isset($_POST['submit'])) {
             <title>Mensaje.</title>
         </head>
         <body>
-            <h2>Mensaje enviado desde página personal.</h2>
+            <h2>Mensaje enviado desde Tons-ke.</h2>
             <h4>' . $from_name . ' <br>Correo: ' . $from_mail . ' <br>Teléfono: ' . $from_phone . ' <br>Escribió lo siguiente:</h4>
             <p> Mensaje: ' . $from_message . '</p>
         </body>
@@ -46,5 +47,5 @@ if (isset($_POST['submit'])) {
     mail($to, $subject, $message, $header);
 
     // Redirect
-    header('Location: index.html?send=true');
+    header('Location:https://www.tons-ke.com?send=true');
 }
