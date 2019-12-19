@@ -21,10 +21,10 @@
 // 	$alpha: map-get($main_shadow, 'alpha')
 // );
 @mixin boxShadowMixin(
-	$offX: 6px, 
+	$offX: 0, 
 	$offY: 6px, 
-	$blur: 13px, 
-	$spread: -4px, 
+	$blur: 8px, 
+	$spread: 0, 
 	$color: $black, 
 	$alpha: 0.5
 	) {
