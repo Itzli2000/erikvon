@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
     );
 
     // Multiple recipients
-    $to = 'informes@tons-ke.com';
+    $to = 'bodega_erikvon@gmail.com';
     $from_name = $_POST['name'];
     $from_phone = $_POST['phone'];
     $from_mail = $_POST['email'];
