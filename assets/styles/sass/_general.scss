@@ -132,7 +132,7 @@ p {
             right: 1rem;
             top: 1rem;
             z-index: 10000000;
-            font-size: 1.5rem; 
+            font-size: 1.5rem;
         }
 
         #navbarSupportedContent {
@@ -2033,6 +2033,13 @@ p {
     @media only screen and (max-width: 770px) {
         margin-top: 0;
         padding-top: 0;
+
+        .colored {
+            .description {
+                bottom: 10px;
+                margin-top: 40px;
+            }
+        }
     }
 
     @media only screen and (max-width: 600px) {
@@ -2140,6 +2147,11 @@ p {
                 background-color: $gray;
                 font-size: 0.85rem;
                 padding: .375rem 1.25rem;
+            }
+
+            input.btn {
+                background-color: $primary;
+                color: $white;
             }
 
             button {
@@ -2293,9 +2305,14 @@ footer {
         }
 
         p {
-            max-width: 150px;
+            max-width: 165px;
             margin: auto;
             margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+
+            i {
+                left: 0;
+            }
         }
     }
 }
