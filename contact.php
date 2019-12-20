@@ -47,5 +47,5 @@ if (isset($_POST['submit'])) {
     mail($to, $subject, $message, $header);
 
     // Redirect
-    header('Location:https://www.tons-ke.com?send=true');
+    header('Location:/?send=true');
 }
