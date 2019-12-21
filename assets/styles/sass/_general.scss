@@ -133,6 +133,11 @@ p {
             top: 1rem;
             z-index: 10000000;
             font-size: 1.5rem;
+
+            img {
+                max-width: 50px;
+                height: auto;
+            }
         }
 
         #navbarSupportedContent {
@@ -282,7 +287,7 @@ p {
 
         .mainSlider {
             .item {
-                height: 50vh;
+                height: 100vh;
             }
         }
 
@@ -317,21 +322,22 @@ p {
         }
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 760px) {
         .slideText {
             left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 1rem;
+            bottom: 130px;
+            top: unset;
+            transform: translateX(-50%);
+            font-size: 1.5rem;
 
             span {
-                font-size: 1.2rem;
+                font-size: 1.8rem;
             }
         }
 
         .mainSlider {
             .item {
-                height: 50vh;
+                height: 100vh;
             }
         }
 
@@ -488,6 +494,10 @@ p {
             padding-bottom: 60%;
             display: inline-block;
             vertical-align: top;
+
+            @media only screen and (min-width: 780px) and (max-width: 1300px) {
+                padding-bottom: calc(100% - 170px);
+            }
 
             @media only screen and (min-width: 780px) and (max-width: 1050px) {
                 padding-bottom: calc(100% - 120px);
@@ -897,8 +907,17 @@ p {
     }
 
     @media only screen and (max-width: 1050px) {
-        margin-top: -65px;
-        padding-top: 65px;
+        margin-top: -80px;
+        padding-top: 80px;
+
+        .imageContainer {
+            height: calc(100vh - 80px);
+
+            .floatContainer {
+                right: unset;
+                left: 8vw;
+            }
+        }
     }
 
     @media only screen and (max-width: 770px) {
@@ -907,6 +926,7 @@ p {
 
         .imageContainer {
             height: 50vh;
+            min-height: 400px;
 
             .floatContainer {
                 right: unset;
@@ -931,21 +951,39 @@ p {
         }
     }
 
+    @media only screen and (min-width: 601px) {
+        .slide {
+            font-size: 1rem;
+
+            span {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
     @media only screen and (max-width: 600px) {
         .imageContainer {
             height: 100vh;
 
             .floatContainer {
                 left: 50%;
+                width: 90%;
                 transform: translateX(-50%);
 
                 .header {
-                    font-size: 0.8rem;
+                    font-size: 1.5rem;
+                    text-align: center;
+
+                    &:after {
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 200px;
+                    }
                 }
 
                 .dotted,
                 ul li {
-                    font-size: 0.7rem;
+                    font-size: 0.95rem;
                 }
             }
         }
@@ -1049,6 +1087,10 @@ p {
                 padding-bottom: 70%;
                 display: inline-block;
                 vertical-align: top;
+
+                @media only screen and (min-width: 780px) and (max-width: 1300px) {
+                    padding-bottom: calc(50vh - 70px);
+                }
 
                 @media only screen and (min-width: 780px) and (max-width: 1050px) {
                     padding-bottom: 100%;
@@ -1293,7 +1335,7 @@ p {
                 height: 100%;
 
                 .slick-slide div:first-child {
-                    height: 100%;
+                    height: 98vh;
                 }
             }
         }
@@ -1545,7 +1587,8 @@ p {
 
         .InstallationsSlider {
             .item {
-                min-height: 50vh;
+                height: 50vh;
+                min-height: 400px;
             }
         }
 
@@ -1682,17 +1725,25 @@ p {
         }
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 760px) {
 
         .InstallationsSlider {
             .item {
-                min-height: 80vh;
+                min-height: 95vh;
             }
         }
 
         .colored .description {
 
             .customCard {
+                .customCard-header {
+                    font-size: 1rem;
+                }
+
+                .customCard-body li {
+                    font-size: 0.85rem;
+                }
+
                 ul li {
                     font-size: 0.57rem;
                 }
@@ -1724,10 +1775,11 @@ p {
         .floatContainer {
 
             .header {
-                font-size: 0.8rem;
+                font-size: 1.5rem;
                 position: relative;
                 width: 100%;
                 color: $white;
+                text-align: center;
 
                 &:after {
                     content: '';
@@ -1735,14 +1787,16 @@ p {
                     height: 1px;
                     display: block;
                     position: relative;
-                    left: -0.5rem;
+                    left: 50%;
+                    transform: translateX(-50%);
                     border-bottom: 1px solid $white;
                 }
             }
 
             .subheader {
-                font-size: 0.55rem;
+                font-size: 0.95rem;
                 color: $white;
+                text-align: justify;
             }
         }
     }
@@ -1837,6 +1891,16 @@ p {
             margin: 2rem;
             margin-bottom: 1rem;
             background-color: rgba($primary, 1);
+
+            .title {
+                text-align: center;
+                margin-bottom: 1rem;
+
+                &:before {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
         }
     }
 
@@ -2010,7 +2074,7 @@ p {
                 margin-left: 1rem;
                 color: $white;
                 position: relative;
-                margin-bottom: 3px;
+                margin-bottom: 1rem;
                 font-weight: bold;
                 line-height: 1.7rem;
                 font-size: 1.5rem;
@@ -2018,10 +2082,10 @@ p {
                 &:before {
                     content: '';
                     position: absolute;
-                    width: 190px;
+                    width: 240px;
                     height: 1px;
                     left: -10px;
-                    bottom: 0;
+                    bottom: -3px;
                     border-bottom: 1px solid $white;
                 }
             }
@@ -2091,6 +2155,16 @@ p {
                     z-index: 10;
                     position: relative;
                     right: 10px;
+                }
+            }
+
+            .description {
+                .header {
+                    margin-bottom: 1rem;
+
+                    &:before {
+                        width: 240px;
+                    }
                 }
             }
         }
@@ -2200,7 +2274,11 @@ p {
         }
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 760px) {
+
+        .slide {
+            font-size: 1.35rem;
+        }
 
         .contactContainer {
             min-height: 100vh;
@@ -2312,7 +2390,33 @@ footer {
         }
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (min-width: 770px) and (max-width: 1100px) {
+        .footerTextContainer {
+            div[class*="col-"] {
+                padding-left: 0;
+                padding-right: 0;
+
+                p {
+                    padding-left: 1rem;
+                    font-size: 0.65rem;
+
+                    i {
+                        left: 0;
+                    }
+
+                    &.phone {
+                        padding-left: 3rem;
+
+                        i {
+                            left: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 760px) {
         #svgbg {
             position: absolute;
             bottom: unset;
@@ -2329,13 +2433,17 @@ footer {
         }
 
         p {
-            max-width: 165px;
+            max-width: 190px;
             margin: auto;
             margin-bottom: 1.5rem;
             padding-left: 1.5rem;
 
             i {
                 left: 0;
+            }
+
+            &.final {
+                padding: 0;
             }
         }
     }
