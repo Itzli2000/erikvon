@@ -124,23 +124,6 @@ p {
             display: none;
         }
 
-
-
-        .navbar-toggler {
-            color: $white;
-            position: fixed;
-            right: 1rem;
-            top: 1rem;
-            z-index: 10000000;
-            font-size: 1.5rem;
-
-            img {
-                max-width: 50px;
-                width: 50px;
-                height: auto;
-            }
-        }
-
         #navbarSupportedContent {
             background-color: rgba($accent, 0.92);
         }
@@ -192,6 +175,35 @@ p {
     }
 }
 
+.navbar-toggler {
+    display: none;
+
+    @media only screen and (max-width: 770px) {
+        display: block;
+        color: $white;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        z-index: 10000000;
+        font-size: 1.5rem;
+
+        img {
+            max-width: 70px;
+            width: 70px;
+            height: auto;
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+
+        img {
+            max-width: 50px;
+            width: 50px;
+            height: auto;
+        }
+    }
+}
+
 #Home {
     position: relative;
 
@@ -232,19 +244,37 @@ p {
             }
 
             &.slide1 {
-                background-image: url('../images/evon-ab.jpg');
+                background-image: url('../images/evon-a.jpg');
             }
 
             &.slide2 {
-                background-image: url('../images/evon-ba.jpg');
+                background-image: url('../images/evon-b.jpg');
             }
 
             &.slide3 {
-                background-image: url('../images/evon-cb.jpg');
+                background-image: url('../images/evon-c.jpg');
             }
 
             &.slide4 {
-                background-image: url('../images/evon-da.jpg');
+                background-image: url('../images/evon-d.jpg');
+            }
+
+            @media only screen and (max-width: 770px) {
+                &.slide1 {
+                    background-image: url('../images/evon-a3.jpg');
+                }
+
+                &.slide2 {
+                    background-image: url('../images/evon-b3.jpg');
+                }
+
+                &.slide3 {
+                    background-image: url('../images/evon-c3.jpg');
+                }
+
+                &.slide4 {
+                    background-image: url('../images/evon-d3.jpg');
+                }
             }
         }
     }
@@ -281,9 +311,16 @@ p {
 
     @media only screen and (max-width: 770px) {
         .slideText {
-            left: 13%;
-            top: 50%;
-            transform: translateY(-50%);
+            left: 50%;
+            bottom: 5rem;
+            top: unset;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            text-align: center;
+
+            span {
+                font-size: 2.3rem;
+            }
         }
 
         .mainSlider {
@@ -326,10 +363,11 @@ p {
     @media only screen and (max-width: 760px) {
         .slideText {
             left: 50%;
-            bottom: 130px;
+            bottom: 5rem;
             top: unset;
             transform: translateX(-50%);
             font-size: 1.5rem;
+            text-align: center;
 
             span {
                 font-size: 1.8rem;
@@ -905,6 +943,11 @@ p {
 
     .slide {
         display: none;
+        font-size: 1rem;
+
+        span {
+            font-size: 1.3rem;
+        }
     }
 
     @media only screen and (max-width: 1050px) {
@@ -932,6 +975,18 @@ p {
             .floatContainer {
                 right: unset;
                 left: 8vw;
+
+                .header {
+                    font-size: 1rem;
+                }
+
+                .dotted {
+                    font-size: 0.75rem;
+                }
+
+                ul li {
+                    font-size: 0.7rem;
+                }
             }
         }
 
@@ -946,18 +1001,8 @@ p {
             margin-bottom: 0;
 
             span {
-                font-size: 2rem;
+                font-size: 1.85rem;
                 text-transform: uppercase;
-            }
-        }
-    }
-
-    @media only screen and (min-width: 601px) {
-        .slide {
-            font-size: 1rem;
-
-            span {
-                font-size: 1.3rem;
             }
         }
     }
@@ -972,7 +1017,7 @@ p {
                 transform: translateX(-50%);
 
                 .header {
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     text-align: center;
 
                     &:after {
@@ -984,8 +1029,16 @@ p {
 
                 .dotted,
                 ul li {
-                    font-size: 0.95rem;
+                    font-size: 0.8rem;
                 }
+            }
+        }
+
+        .slide {
+            font-size: 1rem;
+
+            span {
+                font-size: 1.3rem;
             }
         }
     }
@@ -1478,63 +1531,157 @@ p {
             background-position: center center;
 
             &.slide1 {
-                background-image: url('../images/fachada-1.jpg');
+                background-image: url('../images/1.jpg');
             }
 
             &.slide2 {
-                background-image: url('../images/camion-1.jpg');
+                background-image: url('../images/2.jpg');
             }
 
             &.slide3 {
-                background-image: url('../images/bodega-2.jpg');
+                background-image: url('../images/3.jpg');
             }
 
             &.slide4 {
-                background-image: url('../images/camion-2.jpg');
+                background-image: url('../images/4.jpg');
             }
 
             &.slide5 {
-                background-image: url('../images/bodega-3.jpg');
+                background-image: url('../images/5.jpg');
             }
 
             &.slide6 {
-                background-image: url('../images/camion-3.jpg');
+                background-image: url('../images/6.jpg');
             }
 
             &.slide7 {
-                background-image: url('../images/fachada-2.jpg');
+                background-image: url('../images/7.jpg');
             }
 
             &.slide8 {
-                background-image: url('../images/camion-4.jpg');
+                background-image: url('../images/8.jpg');
             }
 
             &.slide9 {
-                background-image: url('../images/camion-5.jpg');
+                background-image: url('../images/9.jpg');
             }
 
             &.slide10 {
-                background-image: url('../images/evon-ab.jpg');
+                background-image: url('../images/10.jpg');
             }
 
             &.slide11 {
-                background-image: url('../images/evon-bb.jpg');
+                background-image: url('../images/11.jpg');
             }
 
             &.slide12 {
-                background-image: url('../images/bodega-4.jpg');
+                background-image: url('../images/12.jpg');
             }
 
             &.slide13 {
-                background-image: url('../images/bodega-5.jpg');
+                background-image: url('../images/13.jpg');
             }
 
             &.slide14 {
-                background-image: url('../images/bodega-6.jpg');
+                background-image: url('../images/14.jpg');
             }
 
             &.slide15 {
-                background-image: url('../images/bodega-7.jpg');
+                background-image: url('../images/15.jpg');
+            }
+
+            &.slide16 {
+                background-image: url('../images/16.jpg');
+            }
+
+            &.slide17 {
+                background-image: url('../images/17.jpg');
+            }
+
+            &.slide18 {
+                background-image: url('../images/18.jpg');
+            }
+
+            &.slide19 {
+                background-image: url('../images/19.jpg');
+            }
+
+            @media only screen and (max-width: 770px) {
+                &.slide1 {
+                    background-image: url('../images/1m.jpg');
+                }
+    
+                &.slide2 {
+                    background-image: url('../images/2m.jpg');
+                }
+    
+                &.slide3 {
+                    background-image: url('../images/3m.jpg');
+                }
+    
+                &.slide4 {
+                    background-image: url('../images/4m.jpg');
+                }
+    
+                &.slide5 {
+                    background-image: url('../images/5m.jpg');
+                }
+    
+                &.slide6 {
+                    background-image: url('../images/6m.jpg');
+                }
+    
+                &.slide7 {
+                    background-image: url('../images/7m.jpg');
+                }
+    
+                &.slide8 {
+                    background-image: url('../images/8m.jpg');
+                }
+    
+                &.slide9 {
+                    background-image: url('../images/9m.jpg');
+                }
+    
+                &.slide10 {
+                    background-image: url('../images/10m.jpg');
+                }
+    
+                &.slide11 {
+                    background-image: url('../images/11m.jpg');
+                }
+    
+                &.slide12 {
+                    background-image: url('../images/12m.jpg');
+                }
+    
+                &.slide13 {
+                    background-image: url('../images/13m.jpg');
+                }
+    
+                &.slide14 {
+                    background-image: url('../images/14m.jpg');
+                }
+    
+                &.slide15 {
+                    background-image: url('../images/15m.jpg');
+                }
+    
+                &.slide16 {
+                    background-image: url('../images/16m.jpg');
+                }
+    
+                &.slide17 {
+                    background-image: url('../images/17m.jpg');
+                }
+    
+                &.slide18 {
+                    background-image: url('../images/18m.jpg');
+                }
+    
+                &.slide19 {
+                    background-image: url('../images/19m.jpg');
+                }
             }
         }
     }
@@ -1569,9 +1716,41 @@ p {
         }
     }
 
-    @media only screen and (max-width: 1050px) {
+    @media only screen and (min-width:999px) and (max-width: 1050px) {
         margin-top: -65px;
         padding-top: 65px;
+
+        .colored .description {
+            margin-top: 0;
+
+            .header {
+                font-size: 1rem;
+            }
+
+            .subheader {
+                font-size: 0.75rem;
+            }
+
+            .customCard {
+                .customCard-header {
+                    font-size: 0.75rem;
+                }
+
+                .customCard-body {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        .descriptionContainer {
+            max-width: 35%;
+            flex: 0 0 35%;
+        }
+
+        .sliderContainer {
+            max-width: 65%;
+            flex: 0 0 65%;
+        }
     }
 
     @media only screen and (max-width: 770px) {
@@ -1776,7 +1955,7 @@ p {
         .floatContainer {
 
             .header {
-                font-size: 1.5rem;
+                font-size: 1rem;
                 position: relative;
                 width: 100%;
                 color: $white;
@@ -1795,7 +1974,7 @@ p {
             }
 
             .subheader {
-                font-size: 0.95rem;
+                font-size: 0.8rem;
                 color: $white;
                 text-align: justify;
             }
@@ -2414,6 +2593,14 @@ footer {
                     }
                 }
             }
+        }
+    }
+
+    @media only screen and (max-width: 1050px) {
+
+        #svgbg,
+        .scroller {
+            left: 20%;
         }
     }
 
